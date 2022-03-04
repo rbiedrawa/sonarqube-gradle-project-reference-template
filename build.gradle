@@ -5,8 +5,9 @@ plugins {
 
     id 'idea'
     id 'com.adarshr.test-logger' version '2.1.1'
-    id 'jacoco'
     id "io.freefair.lombok" version "6.4.1"
+    id 'jacoco'
+    id "org.sonarqube" version "3.3"
 }
 
 group = 'com.rbiedrawa'
@@ -14,7 +15,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 apply from: 'gradle/integration-test.gradle'
-
+apply from: "gradle/sonar.gradle"
 
 configurations {
     compileOnly {

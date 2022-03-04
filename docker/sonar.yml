@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  sonar:
+    image: sonarqube:9.3.0-community
+    platform: linux/amd64
+    environment:
+      sonar.forceAuthentication: "false"
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+      SONAR_SEARCH_JAVAADDITIONALOPTS: "-Dbootstrap.system_call_filter=false"
+    ports:
+      - "127.0.0.1:9000:9000"

@@ -24,3 +24,6 @@ file("sonar-project.properties").withReader {
         }
     }
 }
+
+project.tasks["jacocoTestReport"].dependsOn "check"
+project.tasks["sonarqube"].dependsOn "jacocoTestReport"

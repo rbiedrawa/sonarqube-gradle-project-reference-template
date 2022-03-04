@@ -44,7 +44,7 @@ class TodoServiceTest {
 
         // Then
         mockServer.verify();
-        assertThat(actualTodos).isNotNull();
-        assertThat(actualTodos).containsExactlyInAnyOrderElementsOf(expectedTodos);
+        assertThat(actualTodos).isNotNull()
+                .containsExactlyInAnyOrderElementsOf(expectedTodos);
     }
 }

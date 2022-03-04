@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+app:
+  apis:
+    todo-service:
+      base-url: "https://jsonplaceholder.typicode.com"
+
+spring:
+  application:
+    name: demo-app
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: metrics,health,info,env
+  metrics:
+    tags:
+      application: ${spring.application.name}

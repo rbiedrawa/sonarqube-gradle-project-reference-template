@@ -1,0 +1,12 @@
+app:
+  apis:
+    todo-service:
+      base-url: "http://localhost:${wiremock.server.port}"
+
+
+wiremock:
+  server:
+    httpsPort: -1 #fixes 'java.lang.IllegalStateException: No Server ALPNProcessors - WireMock' issue on m1 mac
+    port: 0
+    files: "classpath:/wiremock"
+    stubs: "classpath:/wiremock/stubs"

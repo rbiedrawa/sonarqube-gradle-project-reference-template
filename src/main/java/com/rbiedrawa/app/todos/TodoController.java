@@ -13,17 +13,17 @@ import java.util.List;
 @RequestMapping(TodoController.BASE_PATH)
 @RequiredArgsConstructor
 public class TodoController {
-    public static final String BASE_PATH = "/api/v1/todos";
+    static final String BASE_PATH = "/api/v1/todos";
 
     private final TodoService todoService;
 
     @GetMapping
-    ResponseEntity<List<Todo>> findAll() {
+    public ResponseEntity<List<Todo>> findAll() {
         return ResponseEntity.ok(todoService.findAll());
     }
 
     @GetMapping("{todoId}")
-    ResponseEntity<Todo> find(@PathVariable Long todoId) {
+    public ResponseEntity<Todo> find(@PathVariable Long todoId) {
         return ResponseEntity.ok(todoService.find(todoId));
     }
 }

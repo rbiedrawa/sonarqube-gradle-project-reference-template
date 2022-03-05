@@ -4,9 +4,9 @@ This repository demonstrates how to perform and configure continuous inspection 
 
 ## Features
 
-* Local SonarQube server via Docker compose
-* Jacoco coverage reports 
+* Local SonarQube server via docker compose
 * Gradle SonarQube plugin configuration with custom coverage/issues exclusions 
+* Jacoco coverage reports 
 * Separated unit and integration tests.
 * Spring Boot integration tests with WireMock
 * Unit testing REST services clients via @RestClientTest
@@ -30,12 +30,14 @@ This repository demonstrates how to perform and configure continuous inspection 
     ./gradlew clean sonarqube
     ```
 4. Once the analysis completes, it should be available on the Sonar dashboard. 
+   ![sonarqube-dashboard.png](./docs/img/sonarqube-dashboard.png)
 5. Check the code smells. 
+   ![code-smells.png](./docs/img/code-smells.png)
 6. Have a fun and play with the demo setup by fixing the code smells, adding more tests for better coverages or edit [sonar-project.properties](./sonar-project.properties) to tweak the analysis
 
 ## Additional Useful Tools
 
-* [sonarlint - Intellij IDEA plugin](https://www.sonarlint.org/intellij)
+* [Sonarlint - Intellij IDEA plugin](https://www.sonarlint.org/intellij)
 
 ## References
 

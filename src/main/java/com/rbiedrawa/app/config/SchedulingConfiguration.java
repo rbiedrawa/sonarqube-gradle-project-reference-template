@@ -13,7 +13,7 @@ public class SchedulingConfiguration {
 
     @PostConstruct
     void init() {
-        log.info("Enabled Scheduling!!!!");
+        log.info("Enabled Scheduling !!!");
     }
 
 }

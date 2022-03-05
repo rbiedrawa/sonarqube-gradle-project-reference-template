@@ -24,7 +24,7 @@ This repository demonstrates how to perform and configure continuous inspection 
     ```shell
     docker-compose -f ./docker/sonar.yml up -d
     ```
-2. Check if container is running, open SonarQube dashboard, which should be available on [http://localhost:9000/](http://localhost:9000/)
+2. Check if container is up and running by opening SonarQube dashboard, which should be available on [http://localhost:9000/](http://localhost:9000/)
 3. Run a SonarQube analysis
     ```shell
     ./gradlew clean sonarqube

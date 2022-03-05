@@ -1,0 +1,6 @@
+{
+  "userId": 1,
+  "id": "{{request.pathSegments.[1]}}",
+  "title": "delectus aut autem",
+  "completed": false
+}

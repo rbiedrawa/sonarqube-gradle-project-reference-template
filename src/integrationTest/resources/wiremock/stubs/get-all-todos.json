@@ -1,0 +1,13 @@
+{
+  "request" : {
+    "urlPathPattern" : "/todos",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "get-all-todos-200-response.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  }
+}

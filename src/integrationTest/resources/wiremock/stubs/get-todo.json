@@ -1,13 +1,14 @@
 {
   "request" : {
-    "urlPathPattern" : "/todos",
+    "urlPathPattern" : "/todos/.*",
     "method" : "GET"
   },
   "response" : {
     "status" : 200,
-    "bodyFileName" : "todos-response.json",
+    "bodyFileName" : "get-todo-200-response.json",
     "headers" : {
       "Content-Type" : "application/json"
-    }
+    },
+    "transformers": ["response-template"]
   }
 }

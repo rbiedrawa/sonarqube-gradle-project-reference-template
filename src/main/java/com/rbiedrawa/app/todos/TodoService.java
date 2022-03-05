@@ -32,4 +32,7 @@ public class TodoService {
         ).getBody();
     }
 
+    public Todo find(Long todoId) {
+        return restTemplate.getForEntity(BASE_PATH + "/{todoId}", Todo.class, todoId).getBody();
+    }
 }
